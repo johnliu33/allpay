@@ -21,7 +21,7 @@ module Allpay
       @options = {mode: :production}.merge!(options)
       case @options[:mode]
       when :production
-        option_required! :merchant_id, :hash_key, :hash_iv
+        # option_required! :merchant_id, :hash_key, :hash_iv
       when :test
         @options = TEST_OPTIONS.merge(options)
       else
